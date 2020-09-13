@@ -1,0 +1,24 @@
+{
+	"authors": [
+		"fence"
+	],
+	"copyright": "Copyright © 2020, fence",
+	"description": "libvlc bindings",
+	"license": "LGPL2-1",
+	"name": "vlc",
+    "libs": ["vlc"],
+	"configurations": [
+        {
+            "name": "vlc",
+            "targetType": "library",
+            "excludedSourceFiles": [ "examples/**/*.d" ]
+        },
+        {
+            "name": "vlcd-play",
+            "targetType": "executable",
+            "targetName": "vlcd-play",
+            "mainSourceFile": "examples/play.d"
+        }
+
+    ]
+}
